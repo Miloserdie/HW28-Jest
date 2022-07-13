@@ -97,6 +97,6 @@ describe('getUserInfo', () => {
 		);
 	});
 	test('should return true when checked does the fullName property include the name Vick', () => {
-		expect(getUserInfo().fullName.includes('Vick')).toBe(true);
+		expect(getUserInfo().fullName).toContain('Vick');
 	});
 });
